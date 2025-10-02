@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B2672D552E8F44B60047B27D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B2672D542E8F44AD0047B27D /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B2672D282E8F39B60047B27D /* spotlightchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotlightchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2672D542E8F44AD0047B27D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		B2672D1F2E8F39B60047B27D = {
 			isa = PBXGroup;
 			children = (
+				B2672D542E8F44AD0047B27D /* .gitignore */,
 				B2672D2A2E8F39B60047B27D /* spotlightchat */,
 				B2672D292E8F39B60047B27D /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2672D552E8F44B60047B27D /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
