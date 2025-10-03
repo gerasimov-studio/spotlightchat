@@ -20,7 +20,7 @@ final class KeychainHelper {
     // Сохраняет строку в Keychain
     func save(_ value: String, key: String) throws {
         let data = Data(value.utf8)
-        var query: [String: Any] = [
+        let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: key,
             kSecValueData as String: data,

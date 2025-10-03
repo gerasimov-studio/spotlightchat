@@ -27,7 +27,7 @@ actor OpenAIClient {
 
     func ask(_ prompt: String) async throws -> String {
         // Разворачиваем Optional безопасно
-        guard let key = try await KeychainHelper.shared.get(key: KeychainHelper.openAIKey) else {
+        guard let key = try KeychainHelper.shared.get(key: KeychainHelper.openAIKey) else {
             throw OpenAIError.noAPIKey
         }
 
