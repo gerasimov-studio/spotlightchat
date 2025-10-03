@@ -8,17 +8,108 @@
 
 /* Begin PBXBuildFile section */
 		B2672D552E8F44B60047B27D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B2672D542E8F44AD0047B27D /* .gitignore */; };
+		B2672D612E8FFD990047B27D /* spotlightchatExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B2672D5A2E8FFD990047B27D /* spotlightchatExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2672D712E9002CC0047B27D /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2672D702E9002CC0047B27D /* Intents.framework */; };
+		B2672D782E9002CC0047B27D /* spotlightchatIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B2672D6E2E9002CC0047B27D /* spotlightchatIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2672D5F2E8FFD990047B27D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2672D202E8F39B60047B27D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2672D592E8FFD990047B27D;
+			remoteInfo = spotlightchatExtension;
+		};
+		B2672D762E9002CC0047B27D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2672D202E8F39B60047B27D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2672D6D2E9002CC0047B27D;
+			remoteInfo = spotlightchatIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2672D662E8FFD990047B27D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2672D612E8FFD990047B27D /* spotlightchatExtension.appex in Embed Foundation Extensions */,
+				B2672D782E9002CC0047B27D /* spotlightchatIntent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B2672D282E8F39B60047B27D /* spotlightchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotlightchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2672D542E8F44AD0047B27D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B2672D5A2E8FFD990047B27D /* spotlightchatExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = spotlightchatExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2672D6E2E9002CC0047B27D /* spotlightchatIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = spotlightchatIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2672D702E9002CC0047B27D /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B2672D622E8FFD990047B27D /* Exceptions for "spotlightchatExtension" folder in "spotlightchatExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B2672D592E8FFD990047B27D /* spotlightchatExtension */;
+		};
+		B2672D682E8FFDE60047B27D /* Exceptions for "spotlightchat" folder in "spotlightchatExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KeychainHelper.swift,
+				OpenAIClient.swift,
+			);
+			target = B2672D592E8FFD990047B27D /* spotlightchatExtension */;
+		};
+		B2672D792E9002CC0047B27D /* Exceptions for "spotlightchatIntent" folder in "spotlightchatIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B2672D6D2E9002CC0047B27D /* spotlightchatIntent */;
+		};
+		B2672D7E2E9003120047B27D /* Exceptions for "spotlightchat" folder in "spotlightchatIntent" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				KeychainHelper.swift,
+				OpenAIClient.swift,
+			);
+			target = B2672D6D2E9002CC0047B27D /* spotlightchatIntent */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B2672D2A2E8F39B60047B27D /* spotlightchat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2672D682E8FFDE60047B27D /* Exceptions for "spotlightchat" folder in "spotlightchatExtension" target */,
+				B2672D7E2E9003120047B27D /* Exceptions for "spotlightchat" folder in "spotlightchatIntent" target */,
+			);
 			path = spotlightchat;
+			sourceTree = "<group>";
+		};
+		B2672D5B2E8FFD990047B27D /* spotlightchatExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2672D622E8FFD990047B27D /* Exceptions for "spotlightchatExtension" folder in "spotlightchatExtension" target */,
+			);
+			path = spotlightchatExtension;
+			sourceTree = "<group>";
+		};
+		B2672D722E9002CC0047B27D /* spotlightchatIntent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2672D792E9002CC0047B27D /* Exceptions for "spotlightchatIntent" folder in "spotlightchatIntent" target */,
+			);
+			path = spotlightchatIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +122,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2672D572E8FFD990047B27D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2672D6B2E9002CC0047B27D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2672D712E9002CC0047B27D /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +145,9 @@
 			children = (
 				B2672D542E8F44AD0047B27D /* .gitignore */,
 				B2672D2A2E8F39B60047B27D /* spotlightchat */,
+				B2672D5B2E8FFD990047B27D /* spotlightchatExtension */,
+				B2672D722E9002CC0047B27D /* spotlightchatIntent */,
+				B2672D6F2E9002CC0047B27D /* Frameworks */,
 				B2672D292E8F39B60047B27D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,8 +156,18 @@
 			isa = PBXGroup;
 			children = (
 				B2672D282E8F39B60047B27D /* spotlightchat.app */,
+				B2672D5A2E8FFD990047B27D /* spotlightchatExtension.appex */,
+				B2672D6E2E9002CC0047B27D /* spotlightchatIntent.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B2672D6F2E9002CC0047B27D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2672D702E9002CC0047B27D /* Intents.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,10 +180,13 @@
 				B2672D242E8F39B60047B27D /* Sources */,
 				B2672D252E8F39B60047B27D /* Frameworks */,
 				B2672D262E8F39B60047B27D /* Resources */,
+				B2672D662E8FFD990047B27D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2672D602E8FFD990047B27D /* PBXTargetDependency */,
+				B2672D772E9002CC0047B27D /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B2672D2A2E8F39B60047B27D /* spotlightchat */,
@@ -75,6 +197,50 @@
 			productName = spotlightchat;
 			productReference = B2672D282E8F39B60047B27D /* spotlightchat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B2672D592E8FFD990047B27D /* spotlightchatExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2672D632E8FFD990047B27D /* Build configuration list for PBXNativeTarget "spotlightchatExtension" */;
+			buildPhases = (
+				B2672D562E8FFD990047B27D /* Sources */,
+				B2672D572E8FFD990047B27D /* Frameworks */,
+				B2672D582E8FFD990047B27D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2672D5B2E8FFD990047B27D /* spotlightchatExtension */,
+			);
+			name = spotlightchatExtension;
+			packageProductDependencies = (
+			);
+			productName = spotlightchatExtension;
+			productReference = B2672D5A2E8FFD990047B27D /* spotlightchatExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B2672D6D2E9002CC0047B27D /* spotlightchatIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2672D7A2E9002CC0047B27D /* Build configuration list for PBXNativeTarget "spotlightchatIntent" */;
+			buildPhases = (
+				B2672D6A2E9002CC0047B27D /* Sources */,
+				B2672D6B2E9002CC0047B27D /* Frameworks */,
+				B2672D6C2E9002CC0047B27D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2672D722E9002CC0047B27D /* spotlightchatIntent */,
+			);
+			name = spotlightchatIntent;
+			packageProductDependencies = (
+			);
+			productName = spotlightchatIntent;
+			productReference = B2672D6E2E9002CC0047B27D /* spotlightchatIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -87,6 +253,12 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					B2672D272E8F39B60047B27D = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					B2672D592E8FFD990047B27D = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					B2672D6D2E9002CC0047B27D = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -106,6 +278,8 @@
 			projectRoot = "";
 			targets = (
 				B2672D272E8F39B60047B27D /* spotlightchat */,
+				B2672D592E8FFD990047B27D /* spotlightchatExtension */,
+				B2672D6D2E9002CC0047B27D /* spotlightchatIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +293,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2672D582E8FFD990047B27D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2672D6C2E9002CC0047B27D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -129,7 +317,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2672D562E8FFD990047B27D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2672D6A2E9002CC0047B27D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2672D602E8FFD990047B27D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2672D592E8FFD990047B27D /* spotlightchatExtension */;
+			targetProxy = B2672D5F2E8FFD990047B27D /* PBXContainerItemProxy */;
+		};
+		B2672D772E9002CC0047B27D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2672D6D2E9002CC0047B27D /* spotlightchatIntent */;
+			targetProxy = B2672D762E9002CC0047B27D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B2672D312E8F39B70047B27D /* Debug */ = {
@@ -257,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = spotlightchat/spotlightchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -290,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = spotlightchat/spotlightchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -318,6 +535,128 @@
 			};
 			name = Release;
 		};
+		B2672D642E8FFD990047B27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = spotlightchatExtension/spotlightchatExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69R6H2S49F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spotlightchatExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spotlightchatExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gerasimov.studio.spotlightchat.spotlightchatExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2672D652E8FFD990047B27D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = spotlightchatExtension/spotlightchatExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69R6H2S49F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spotlightchatExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spotlightchatExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gerasimov.studio.spotlightchat.spotlightchatExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B2672D7B2E9002CC0047B27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69R6H2S49F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spotlightchatIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spotlightchatIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gerasimov.studio.spotlightchat.spotlightchatIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2672D7C2E9002CC0047B27D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69R6H2S49F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spotlightchatIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spotlightchatIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gerasimov.studio.spotlightchat.spotlightchatIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +674,24 @@
 			buildConfigurations = (
 				B2672D342E8F39B70047B27D /* Debug */,
 				B2672D352E8F39B70047B27D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2672D632E8FFD990047B27D /* Build configuration list for PBXNativeTarget "spotlightchatExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2672D642E8FFD990047B27D /* Debug */,
+				B2672D652E8FFD990047B27D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2672D7A2E9002CC0047B27D /* Build configuration list for PBXNativeTarget "spotlightchatIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2672D7B2E9002CC0047B27D /* Debug */,
+				B2672D7C2E9002CC0047B27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

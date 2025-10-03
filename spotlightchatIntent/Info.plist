@@ -10,6 +10,10 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array/>
+<key>IntentsSupported</key>
+<array>
+    <string>INSendMessageIntent</string>
+</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.intents-service</string>

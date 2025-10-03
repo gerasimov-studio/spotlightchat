@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct spotlightchatApp: App {
+struct SpotlightChatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            APIKeyView()
         }
     }
 }
